@@ -1,0 +1,599 @@
+// A sample cafeteria ordering
+import java.util.*;
+public class cafe
+{
+    public static void main(String args[])
+    {
+        Scanner in =new Scanner(System.in);
+        int ch,cm,tcm,amt=0,tamt=0,tm,ttm,amt2=0,tamt2=0,ibm,ibtm,amt3=0,tamt3=0,fm,ftm,amt4=0,tamt4=0;
+        double tot,gst=0,gtotal;
+        String str="",choice,choice1="Y";
+        System.out.println("***Welcom to Osm Cafe***");
+        System.out.println("*    Menu                            *");
+        System.out.println("* 1.Coffee                           *");
+        System.out.println("* 2.Tea                              *");
+        System.out.println("* 3.Ice Blended                      *");
+        System.out.println("* 4.Trappe                           *");
+        System.out.println("**************");
+        System.out.println();
+        while(choice1.equalsIgnoreCase("y"))
+        {
+            System.out.println("Enter your choice ");
+            ch=in.nextInt();
+            switch(ch)
+            {
+                case 1:
+                System.out.println("********  Coffee **********");
+                System.out.println("*                           SMALL     MEDIUM     LARGE    *");
+                System.out.println("*1. AMERICANO              Rs.150     Rs.180     Rs.200   *");
+                System.out.println("*2. BLACK COFFEE           Rs.150     Rs.180     Rs.200   *");
+                System.out.println("*3. CAFE AU LAET           Rs.150     Rs.180     Rs.200   *");
+                System.out.println("*4. ESPRESSO               Rs.150     Rs.180     Rs.200   *");
+                System.out.println("*5. LATTE                  Rs.150     Rs.180     Rs.200   *");
+                System.out.println("*6. MACCHITO               Rs.180     Rs.220     Rs.250   *");
+                System.out.println("*********************");
+                System.out.println("Enter S for Small");
+                System.out.println("Enter M Medium");
+                System.out.println("Enter L Large");
+                System.out.println();
+                System.out.println(" Enter your choice small(S)/ medium(M)/ large(L) ");
+                str=in.next();
+                if(str.equalsIgnoreCase("S"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        cm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        tcm=in.nextInt();
+                        if(cm==1)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==2)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==3)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==4)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==5)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==6)
+                        {
+                            amt=150*tcm;
+                        }
+                        tamt=tamt+amt;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                if(str.equalsIgnoreCase("M"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        cm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        tcm=in.nextInt();
+                        if(cm==1)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==2)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==3)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==4)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==5)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==6)
+                        {
+                            amt=150*tcm;
+                        }
+                        tamt=tamt+amt;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                if(str.equalsIgnoreCase("L"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        cm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        tcm=in.nextInt();
+                        if(cm==1)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==2)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==3)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==4)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==5)
+                        {
+                            amt=150*tcm;
+                        }
+                        if(cm==6)
+                        {
+                            amt=150*tcm;
+                        }
+                        tamt=tamt+amt;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                break;
+                case 2:
+                System.out.println("*********   TEA   **********");
+                System.out.println("*                            SMALL     MEDIUM     LARGE    *");
+                System.out.println("* 1. EARLY GREY             Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 2. GREEN TEA              Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 3. JASMINE TEA            Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 4. MILK TEA               Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 5. GINGER TEA             Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 6. HONEY LEMON            Rs.180     Rs.220     Rs.250   *");
+                System.out.println("********************");
+                System.out.println("Enter S for Small");
+                System.out.println("Enter M Medium");
+                System.out.println("Enter L Large");
+                System.out.println();
+                System.out.println(" Enter your choice small(S)/ medium(M)/ large(L) ");
+                str=in.next();
+                if(str.equalsIgnoreCase("S"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        tm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        ttm=in.nextInt();
+                        if(tm==1)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==2)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==3)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==4)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==5)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==6)
+                        {
+                            amt2=150*ttm;
+                        }
+                        tamt2=tamt2+amt2;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                if(str.equalsIgnoreCase("M"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        tm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        ttm=in.nextInt();
+                        if(tm==1)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==2)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==3)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==4)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==5)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==6)
+                        {
+                            amt2=150*ttm;
+                        }
+                        tamt2=tamt2+amt2;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                if(str.equalsIgnoreCase("L"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        tm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        ttm=in.nextInt();
+                        if(tm==1)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==2)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==3)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==4)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==5)
+                        {
+                            amt2=150*ttm;
+                        }
+                        if(tm==6)
+                        {
+                            amt2=150*ttm;
+                        }
+                        tamt2=tamt2+amt2;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                break;
+                case 3:
+                System.out.println("*********   ICE BLENDED   **********");
+                System.out.println("*                            SMALL     MEDIUM     LARGE    *");
+                System.out.println("* 1. CARAMEL                Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 2. COFFEE JELLY           Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 3. COOKIES & CREAM        Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 4. MINT CHCOLATE CHIP     Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 5. STRAWBERRY CREAM       Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 6. VANILA                 Rs.180     Rs.220     Rs.250   *");
+                System.out.println("********************");
+                System.out.println("Enter S for Small");
+                System.out.println("Enter M Medium");
+                System.out.println("Enter L Large");
+                System.out.println();
+                System.out.println(" Enter your choice small(S)/ medium(M)/ large(L) ");
+                str=in.next();
+                if(str.equalsIgnoreCase("S"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        ibm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        ibtm=in.nextInt();
+                        if(ibm==1)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==2)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==3)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==4)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==5)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==6)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        tamt3=tamt3+amt3;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                if(str.equalsIgnoreCase("M"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        ibm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        ibtm=in.nextInt();
+                        if(ibm==1)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==2)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==3)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==4)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==5)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==6)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        tamt3=tamt3+amt3;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                if(str.equalsIgnoreCase("L"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        ibm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        ibtm=in.nextInt();
+                        if(ibm==1)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==2)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==3)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==4)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==5)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        if(ibm==6)
+                        {
+                            amt3=150*ibtm;
+                        }
+                        tamt3=tamt3+amt3;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                break;
+                case 4:
+                System.out.println("*********   ICE BLENDED   **********");
+                System.out.println("*                            SMALL     MEDIUM     LARGE    *");
+                System.out.println("* 1. CARAMEL                Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 2. COFFEE JELLY           Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 3. COOKIES & CREAM        Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 4. MINT CHCOLATE CHIP     Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 5. STRAWBERRY CREAM       Rs.150     Rs.180     Rs.200   *");
+                System.out.println("* 6. VANILA                 Rs.180     Rs.220     Rs.250   *");
+                System.out.println("********************");
+                System.out.println("Enter S for Small");
+                System.out.println("Enter M Medium");
+                System.out.println("Enter L Large");
+                System.out.println();
+                System.out.println(" Enter your choice small(S)/ medium(M)/ large(L) ");
+                str=in.next();
+                if(str.equalsIgnoreCase("S"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        fm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        ftm=in.nextInt();
+                        if(fm==1)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==2)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==3)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==4)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==5)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==6)
+                        {
+                            amt4=150*ftm;
+                        }
+                        tamt4=tamt4+amt4;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                if(str.equalsIgnoreCase("M"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        fm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        ftm=in.nextInt();
+                        if(fm==1)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==2)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==3)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==4)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==5)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==6)
+                        {
+                            amt4=150*ftm;
+                        }
+                        tamt4=tamt4+amt4;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                if(str.equalsIgnoreCase("L"))
+                {
+                    choice="Y";
+                    while(choice.equalsIgnoreCase("Y"))
+                    {
+                        System.out.println("Choose the items by entering the number ");
+                        fm=in.nextInt();
+                        System.out.println(" Enter the Quantity ");
+                        ftm=in.nextInt();
+                        if(fm==1)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==2)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==3)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==4)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==5)
+                        {
+                            amt4=150*ftm;
+                        }
+                        if(fm==6)
+                        {
+                            amt4=150*ftm;
+                        }
+                        tamt4=tamt4+amt4;
+                        System.out.println(" Do you want to place another order? Enter Y/N ");
+                        choice=in.next();
+                    }
+                    
+                }
+                break;
+                default:
+                System.out.println("You have entered wrong choice!!");
+            }
+            System.out.println("Do you want to go to Main Menu!!  Y/N");
+            choice1=in.next();
+        }
+        System.out.println("***  Osm Cafe  ****");
+        if(tamt>0)
+        {
+            System.out.println("***  Coffee    ****");
+            System.out.println("Total cost of Coffee = Rs."+tamt);
+        }
+        if(tamt2>0)
+        {
+            System.out.println("***   Tea      ****");
+            System.out.println("Total cost of Tea =Rs."+tamt2);
+        }
+        if(tamt3>0)
+        {
+            System.out.println("***  Ice Blended   ****");
+            System.out.println("Total cost of Ice Blended =Rs."+tamt3);
+        }
+        if(tamt4>0)
+        {
+            System.out.println("***     Frappe     ****");
+            System.out.println("Total cost of Frappe =Rs."+tamt4);
+        }
+        tot=tamt+tamt2+tamt3+tamt;
+        gst=tot*18.0/100.0;
+        System.out.println("GST =Rs."+gst);
+        gtotal=tot+gst;
+        System.out.println("Amount to be paid Rs. "+gtotal);
+        System.out.println("Thanks for visiting Osm Cafe!!");
+        System.out.println("Your Pleasure Our Comfort!!!");
+        System.out.println("Visit Again!!!");
+        
+        
+    }
+}
